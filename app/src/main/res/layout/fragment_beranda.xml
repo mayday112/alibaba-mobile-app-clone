@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_top_bar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingTop="16sp"
+                    android:paddingBottom="16sp"
+                    android:text="Produk"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    app:drawableBottomCompat="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="Produsen"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="Pasokan Regional"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edittext"
+                android:drawableEnd="@drawable/baseline_search_24"
+                android:ems="10"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Cari produk atau pemasok"
+                android:inputType="text"
+                android:padding="14dp"
+                android:textColorHint="@color/material_dynamic_neutral30"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbarThumbVertical="@null">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_nav_top_slide"
+                    android:scrollbarThumbHorizontal="@null">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_btn_nav_top"
+                            android:paddingTop="12dp"
+                            android:paddingRight="25dp"
+                            android:paddingBottom="12dp"
+                            app:srcCompat="@drawable/screenshot_2024_12_16_183337" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_btn_nav_top"
+                            android:paddingTop="12dp"
+                            android:paddingRight="25dp"
+                            android:paddingBottom="12dp"
+                            app:srcCompat="@drawable/screenshot_2024_12_16_183349" />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="130dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_btn_nav_top"
+                            android:paddingTop="12dp"
+                            android:paddingRight="25dp"
+                            android:paddingBottom="12dp"
+                            app:srcCompat="@drawable/screenshot_2024_12_16_183407" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bg_produk_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/screenshot_2024_12_16_200511" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarThumbHorizontal="@null">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/produk_1"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_17_37_28" />
+
+                                <TextView
+                                    android:id="@+id/hrg_produk_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Rp. 56.500"
+                                    android:textColor="#FF6600" />
+
+                                <TextView
+                                    android:id="@+id/cap_produk_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:paddingLeft="5dp"
+                                    android:text="Extra 51% off"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/produk_2"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_17_37_31" />
+
+                                <TextView
+                                    android:id="@+id/hrg_produk_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Rp. 1.581.465"
+                                    android:textColor="#FF6600" />
+
+                                <TextView
+                                    android:id="@+id/cap_produk_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:paddingLeft="5dp"
+                                    android:text="180-day lowest price"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/produk_3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_17_37_32" />
+
+                                <TextView
+                                    android:id="@+id/hrg_produk_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Rp. 4.675.400"
+                                    android:textColor="#FF6600" />
+
+                                <TextView
+                                    android:id="@+id/cap_produk_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:paddingLeft="5dp"
+                                    android:text="180-day lowest price"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bg_produk_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/screenshot_2024_12_16_222824" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarThumbHorizontal="@null">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/produk_4"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_17_37_33" />
+
+                                <TextView
+                                    android:id="@+id/hrg_produk_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Rp. 145.597-180.520"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/cap_produk_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:paddingLeft="5dp"
+                                    android:text="Min. order: 2 pieces"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/produk_5"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_17_37_34" />
+
+                                <TextView
+                                    android:id="@+id/hrg_produk_5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Rp. 11.644.000"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/cap_produk_5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif"
+                                    android:paddingLeft="5dp"
+                                    android:text="Min. order: 1 pieces"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/produk_6"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_17_37_35" />
+
+                                <TextView
+                                    android:id="@+id/hrg_produk_6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="5dp"
+                                    android:text="Rp. 182.875-201.673"
+                                    android:textColor="#000000" />
+
+                                <TextView
+                                    android:id="@+id/cap_produk_6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="14dp"
+                                    android:fontFamily="sans-serif"
+                                    android:paddingLeft="5dp"
+                                    android:text="Min. order: 1 pieces"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/bg_produk_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/screenshot_2024_12_16_224354" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarThumbHorizontal="@null">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/produk_7"
+                                    android:layout_width="150dp"
+                                    android:layout_height="190dp"
+                                    app:srcCompat="@drawable/screenshot_2024_12_17_001320" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/produk_8"
+                                    android:layout_width="150dp"
+                                    android:layout_height="190dp"
+                                    app:srcCompat="@drawable/screenshot_2024_12_17_001341" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/produk_9"
+                                    android:layout_width="150dp"
+                                    android:layout_height="190dp"
+                                    app:srcCompat="@drawable/screenshot_2024_12_17_001320" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/bg_produk_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:srcCompat="@drawable/screenshot_2024_12_17_001844" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

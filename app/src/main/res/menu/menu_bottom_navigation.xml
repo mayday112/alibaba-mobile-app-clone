@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/beranda"
+        android:icon="@drawable/home_icon_removebg_preview"
+        android:title="Beranda" />
+
+    <item android:id="@+id/dijamin"
+        android:icon="@drawable/outline_shopping_bag_24"
+        android:title="Dijamin"/>
+
+    <item android:id="@+id/pesan"
+        android:icon="@drawable/outline_chat_24"
+        android:title="Pesan" />
+
+    <item android:id="@+id/troli"
+        android:icon="@drawable/outline_shopping_cart_24"
+        android:title="Troli" />
+
+    <item android:id="@+id/alibabaku"
+        android:icon="@drawable/baseline_person_outline_24"
+        android:title="Alibabaku" />
+</menu>
