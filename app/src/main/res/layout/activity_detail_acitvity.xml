@@ -4,6 +4,432 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".DetailAcitvity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.609"
+                app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="242dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_co"
+                android:backgroundTint="@color/material_dynamic_neutral_variant95"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:ems="10"
+                android:hint="nama barang"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColorHint="#878585"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.761" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTextText"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506"
+                app:srcCompat="@drawable/outline_camera_alt_24" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editTextText"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.506"
+                app:srcCompat="@drawable/outline_shopping_cart_24" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/baseline_more_horiz_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="328dp"
+                    app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_01_37_32" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="Alibaba"
+                        android:textColor="#E85837"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="Guaranteed"
+                        android:textColor="#0C0C0C"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_harga"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:text="Rp 4.675.400"
+                                android:textColor="#000000"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:text="pesanan min : 1 buah"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:text="Rp 4.675.400"
+                                android:textColor="#000000"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:text="pesanan min : 1 buah"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:text="Rp 4.675.400"
+                                android:textColor="#000000"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:padding="8dp"
+                                android:text="pesanan min : 1 buah"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="337dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="16dp"
+                        android:text="Mirrorles FujiFilm Xt10 lensa kit 16-50mm mulus siap pakai"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="73dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="10dp"
+                        android:scaleX="-1"
+                        app:srcCompat="@drawable/outline_reply_24" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:text="Lihat ulasan toko ' 14 terjual"
+                    android:textColor="#B4B3B9"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFCD99">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/outline_emoji_events_24"
+                        android:text="No.1 Paling populer"
+
+                        android:textColor="#AE8153" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="200dp"
+                        android:rotation="180"
+                        android:src="@drawable/baseline_arrow_back_ios_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_01_37_32" />
+
+                            <ImageView
+                                android:id="@+id/imageView17"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_01_37_32" />
+
+                            <ImageView
+                                android:id="@+id/imageView16"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_01_37_32" />
+
+                            <ImageView
+                                android:id="@+id/imageView15"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_01_37_32" />
+
+                            <ImageView
+                                android:id="@+id/imageView13"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_01_37_32" />
+
+                            <ImageView
+                                android:id="@+id/imageView14"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_01_37_32" />
+
+                            <ImageView
+                                android:id="@+id/imageView9"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_01_37_32" />
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/whatsapp_image_2024_12_16_at_01_37_32" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Warna"
+                                android:textColor="#000000"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                app:srcCompat="@drawable/outline_chat_24" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Chat Now"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/bg_button_add_to_cart"
+            android:text="Add to cart"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_mulai_bg"
+            android:text="Start order"
+            android:textColor="#F8F8F8"
+            android:textSize="12sp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
