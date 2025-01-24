@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main">#FF6600</color>
     <color name="nav_unselected">#9AFF6600</color>
+    <color name="gray_font_color">#666666</color>
 </resources>

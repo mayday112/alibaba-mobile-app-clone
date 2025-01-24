@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_dasbor"
-    tools:context=".LandingPageActivity">
+    tools:context=".Activities.LandingPageActivity">
 
     <Button
         android:id="@+id/button2"
@@ -13,10 +13,11 @@
         android:layout_height="48dp"
         android:background="@drawable/button_mulai_bg"
         android:fontFamily="@font/poppins_semibold"
-        android:onClick="toMain"
-        android:text="@string/textMulaiBtn"
+        android:onClick="toLogin"
+        android:text="@string/masukBtn"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
+        android:backgroundTint="@color/main"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -31,7 +32,7 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/button_daftar_bg"
         android:fontFamily="@font/poppins_semibold"
-        android:onClick="toMain"
+        android:onClick="toRegister"
         android:text="@string/textDaftarBtn"
         android:textAlignment="center"
         android:textColor="@color/white"

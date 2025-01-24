@@ -1,4 +1,4 @@
-package com.example.utsecommerce;
+package com.example.utsecommerce.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,10 +7,11 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.widget.ImageView;
 
-public class SplashScreenActivity extends AppCompatActivity {
+import com.example.utsecommerce.R;
+
+public class SplashScreenActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +35,5 @@ public class SplashScreenActivity extends AppCompatActivity {
                 finish();
             }
         });
-//        // Timer untuk splash screen
-//        new Handler().postDelayed(() -> {
-//            Intent intent = new Intent(SplashScreenActivity.this, SplashScreen2.class);
-//            startActivity(intent);
-//            finish();
-//        }, 3000); // Durasi splash screen (3000ms = 3 detik)
     }
 }

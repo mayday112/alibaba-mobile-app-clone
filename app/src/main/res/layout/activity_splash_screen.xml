@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".SplashScreenActivity">
+    tools:context=".Activities.SplashScreenActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/whatsapp_image_2024_12_15_at_22_50_10_a2ad2ea1_2"
+        android:src="@drawable/alibaba_icon_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

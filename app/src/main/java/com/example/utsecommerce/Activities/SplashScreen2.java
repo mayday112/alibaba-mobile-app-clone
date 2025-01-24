@@ -1,4 +1,4 @@
-package com.example.utsecommerce;
+package com.example.utsecommerce.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-public class SplashScreen2 extends AppCompatActivity {
+import com.example.utsecommerce.R;
+
+public class SplashScreen2 extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

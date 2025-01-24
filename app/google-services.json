@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "695849209148",
+    "firebase_url": "https://alibaba-app-e654f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "alibaba-app-e654f",
+    "storage_bucket": "alibaba-app-e654f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695849209148:android:4d4a2a927664f934e5a239",
+        "android_client_info": {
+          "package_name": "com.example.utsecommerce"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfk9Xqe7Sw0x7SqDJx54uskTJpjDZBfYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
