@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.example.utsecommerce.Fragments.BerandaFragment;
 import com.example.utsecommerce.Fragments.KeranjangFragment;
+import com.example.utsecommerce.Models.UserModel;
 import com.example.utsecommerce.R;
 import com.example.utsecommerce.databinding.ActivityMainBinding;
 
@@ -34,6 +35,8 @@ public class MainActivity extends BaseActivity {
                 fragment = new KeranjangFragment();
             } else if (id == R.id.profil) {
                 Intent intent = new Intent(this, ProfileActivity.class);
+                UserModel user = (UserModel) getIntent().getSerializableExtra("user");
+                intent.putExtra("user", user);
                 startActivity(intent);
             }
 

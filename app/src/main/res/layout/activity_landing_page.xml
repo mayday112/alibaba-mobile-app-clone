@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_dasbor"
+    android:onClick="toRegister"
     tools:context=".Activities.LandingPageActivity">
 
     <Button
@@ -12,12 +13,12 @@
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:background="@drawable/button_mulai_bg"
+        android:backgroundTint="@color/main"
         android:fontFamily="@font/poppins_semibold"
         android:onClick="toLogin"
         android:text="@string/masukBtn"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:backgroundTint="@color/main"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"

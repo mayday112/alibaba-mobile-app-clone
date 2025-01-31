@@ -73,6 +73,15 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/jaket_hodie" />
 
+                <ImageView
+                    android:id="@+id/btnEditPhotoProfile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/photoUser"
+                    app:layout_constraintEnd_toEndOf="@+id/photoUser"
+                    app:layout_constraintStart_toStartOf="@+id/photoUser"
+                    app:srcCompat="@drawable/baseline_mode_edit_24" />
+
                 <TextView
                     android:id="@+id/nama"
                     android:layout_width="wrap_content"

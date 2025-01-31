@@ -17,7 +17,7 @@ public class LandingPageActivity extends BaseActivity {
     }
 
     public  void toRegister(View view){
-        Intent intent = new Intent(LandingPageActivity.this, MainActivity.class);
+        Intent intent = new Intent(LandingPageActivity.this, RegisterActivity.class);
         startActivity(intent);
     }
 
